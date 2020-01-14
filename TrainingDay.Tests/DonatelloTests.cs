@@ -8,6 +8,7 @@ namespace TrainingDay.Tests
     {
         [Theory]
         [InlineData(60,46)]
+        [InlineData(40,60)]
         public void Should_receive_damage_correctly(decimal damage,decimal expected)
         {
             var sut = new Donatello();

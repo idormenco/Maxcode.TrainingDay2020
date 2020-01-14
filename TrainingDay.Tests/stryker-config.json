@@ -16,10 +16,6 @@
         "file-patterns": [
             "!Program.cs"
         ],
-        "excluded-mutations": [
-            "string",
-            "Logical operators"
-        ],
         "ignore-methods": [
             "*Log*",
             "ToString",

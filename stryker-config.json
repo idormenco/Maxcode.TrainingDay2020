@@ -1,0 +1,31 @@
+{
+	"stryker-config": {
+		"test-runner": "vstest",
+		"reporters": [
+			"progress",
+			"html"
+		],
+		"log-level": "trace",
+		"log-file": true,
+		"timeout-ms": 10000,
+		"project-file": "TrainingDay.MutationTesting\TrainingDay.MutationTesting.csproj",
+		"threshold-high": 80,
+		"threshold-low": 70,
+		"threshold-break": 60,
+		"file-patterns": [
+			"!Program.cs",
+			"!Shuriken.cs"
+		],
+		"excluded-mutations": [],
+		"ignore-methods": [
+			"*Log*",
+			"ToString",
+			"*HashCode*",
+			"*Equals*"
+		],
+		"mutate": [
+			"!Program.cs",
+			"!Shuriken.cs"
+		] 
+	}
+}

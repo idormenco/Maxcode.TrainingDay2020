@@ -6,7 +6,8 @@
     "threshold-high": 80,
     "threshold-low": 70,
     "threshold-break": 60,
-    "excluded-mutations": [],
-    "file-patterns": [ "!Program.cs" ]
+    "file-patterns": [ "!Program.cs", "!Shuriken.cs" ],
+    "excluded-mutations": ["string", "Logical operators"],
+	"mutate": [ "!Program.cs", "!Shuriken.cs" ]
   }
 }

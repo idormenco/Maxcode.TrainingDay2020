@@ -28,7 +28,7 @@ namespace TrainingDay.Tests
             var ex = Should.Throw<Exception>(() => sut.IaBataie(-1));
 
             // Assert
-            Assert.Equal("Something happened", ex.Message);
+            ex.Message.ShouldBe("Something happened");
         }
 
         // fix this 
